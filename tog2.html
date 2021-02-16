@@ -1,0 +1,26 @@
+<html><head>
+<script type="text/javascript">
+function fun1()
+{
+if(document.frm.btn.value=="Show")
+{
+document.getElementById("section").style.display="block";
+document.frm.btn.value="Hide";
+}
+else if(document.frm.btn.value=="Hide")
+{
+document.getElementById("section").style.display="none";
+document.frm.btn.value="Show";
+}
+}
+</script>
+</head>
+<body>
+<form name="frm">
+<input type="button" value="Show" name="btn" onclick="fun1();">
+<div id="section" style="background-color:red;height:582px;width:300px;display:none;">
+<a href="">Harsh</a>
+</div>
+</form>
+</body>
+</html>
